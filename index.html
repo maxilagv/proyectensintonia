@@ -19,18 +19,18 @@
         }
         .product-card:hover {
             transform: translateY(-8px) scale(1.02); /* Efecto más pronunciado al pasar el ratón */
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15); /* Sombra más grande */
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Sombra más grande y oscura al pasar el ratón */
             border-color: #0d6efd; /* Borde azul al pasar el ratón */
         }
         .btn-primary {
             background-color: #0d6efd; /* Azul vibrante */
             transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra inicial */
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Sombra inicial más pronunciada */
         }
         .btn-primary:hover {
             background-color: #0b5ed7;
             transform: translateY(-3px) scale(1.01); /* Efecto de "levantar" y crecer ligeramente */
-            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Sombra más intensa al pasar el ratón */
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* Sombra más intensa al pasar el ratón */
         }
         .navbar-link {
             transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
@@ -40,7 +40,7 @@
             transform: translateY(-2px);
         }
         .hero-heading {
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra de texto para el título del héroe */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Sombra de texto para el título del héroe, más oscura */
         }
         .section-bg-gradient {
             background-image: linear-gradient(to right, #e0f2fe, #e3f2fd); /* Gradiente sutil para secciones */
@@ -50,14 +50,14 @@
         }
         .contact-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25); /* Sombra más grande y oscura al pasar el ratón */
         }
     </style>
 </head>
 <body class="text-gray-800">
 
     <!-- Header y Navegación -->
-    <header class="bg-white shadow-lg py-4">
+    <header class="bg-white shadow-xl py-4"> <!-- Sombra más pronunciada en el header -->
         <div class="container mx-auto px-4 flex justify-between items-center">
             <!-- Logo y Nombre de la marca -->
             <div class="flex items-center">
@@ -82,7 +82,7 @@
         </div>
 
         <!-- Menú de Navegación para móvil (oculto por defecto) -->
-        <nav id="mobile-nav" class="hidden sm:hidden bg-white py-2 px-4 border-t border-gray-200">
+        <nav id="mobile-nav" class="hidden sm:hidden bg-white py-2 px-4 border-t border-gray-200 shadow-md"> <!-- Sombra sutil en el menú móvil -->
             <ul class="flex flex-col space-y-4">
                 <li><a href="#productos" class="navbar-link text-lg font-medium text-gray-700 hover:text-blue-600 block py-2">Categorías</a></li>
                 <li><a href="#contacto" class="navbar-link text-lg font-medium text-gray-700 hover:text-blue-600 block py-2">Contacto</a></li>
@@ -95,7 +95,7 @@
         <div class="container mx-auto px-4">
             <h2 class="text-4xl sm:text-6xl font-extrabold mb-4 leading-tight hero-heading animate-fade-in-down">Todo para tu hogar, en perfecta sintonía.</h2>
             <p class="text-lg sm:text-2xl mb-8 sm:mb-10 opacity-90 animate-fade-in-up">Descubre nuestra amplia selección de productos de calidad para equipar tu casa.</p>
-            <a href="#productos" class="inline-block bg-white text-blue-700 font-bold py-3 px-8 sm:py-4 sm:px-10 rounded-full shadow-xl hover:bg-gray-100 transform hover:scale-110 transition duration-500 ease-in-out">Explorar Categorías</a>
+            <a href="#productos" class="inline-block bg-white text-blue-700 font-bold py-3 px-8 sm:py-4 sm:px-10 rounded-full shadow-2xl hover:bg-gray-100 transform hover:scale-110 transition duration-500 ease-in-out">Explorar Categorías</a> <!-- Sombra más intensa en el botón principal -->
         </div>
     </section>
 
@@ -105,7 +105,7 @@
             <h2 class="text-4xl sm:text-5xl font-bold text-center mb-12 sm:mb-16 text-gray-900">Nuestras Categorías</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 sm:gap-10">
                 <!-- Tarjeta de Categoría: Hogar -->
-                <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer" onclick="goToCategory('Hogar')">
+                <div class="product-card bg-white rounded-xl shadow-xl overflow-hidden cursor-pointer" onclick="goToCategory('Hogar')"> <!-- Sombra más pronunciada en las tarjetas -->
                     <img src="https://placehold.co/600x400/a7d9f7/2d3748?text=Hogar" alt="Hogar" class="w-full h-48 sm:h-52 object-cover transition duration-300 ease-in-out transform hover:scale-105">
                     <div class="p-6 sm:p-7">
                         <h3 class="text-2xl sm:text-3xl font-semibold mb-2 sm:mb-3 text-gray-900">Hogar</h3>
@@ -115,7 +115,7 @@
                 </div>
 
                 <!-- Tarjeta de Categoría: Audio -->
-                <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer" onclick="goToCategory('Audio')">
+                <div class="product-card bg-white rounded-xl shadow-xl overflow-hidden cursor-pointer" onclick="goToCategory('Audio')"> <!-- Sombra más pronunciada en las tarjetas -->
                     <img src="https://placehold.co/600x400/f7d9a7/2d3748?text=Audio" alt="Audio" class="w-full h-48 sm:h-52 object-cover transition duration-300 ease-in-out transform hover:scale-105">
                     <div class="p-6 sm:p-7">
                         <h3 class="text-2xl sm:text-3xl font-semibold mb-2 sm:mb-3 text-gray-900">Audio</h3>
@@ -125,7 +125,7 @@
                 </div>
 
                 <!-- Tarjeta de Categoría: Electrónica -->
-                <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer" onclick="goToCategory('Electronica')">
+                <div class="product-card bg-white rounded-xl shadow-xl overflow-hidden cursor-pointer" onclick="goToCategory('Electronica')"> <!-- Sombra más pronunciada en las tarjetas -->
                     <img src="https://placehold.co/600x400/d9a7f7/2d3748?text=Electronica" alt="Electrónica" class="w-full h-48 sm:h-52 object-cover transition duration-300 ease-in-out transform hover:scale-105">
                     <div class="p-6 sm:p-7">
                         <h3 class="text-2xl sm:text-3xl font-semibold mb-2 sm:mb-3 text-gray-900">Electrónica</h3>
@@ -133,10 +133,6 @@
                         <button class="btn-primary text-white font-bold py-2 px-4 sm:py-3 sm:px-6 rounded-lg w-full">Ver Categoría</button>
                     </div>
                 </div>
-
-                <!-- Eliminadas las tarjetas de productos individuales (Heladeras, Cocinas, Lavarropas, etc.) -->
-                <!-- Se mantienen 3 tarjetas para las 3 categorías solicitadas -->
-
             </div>
         </div>
     </section>
@@ -186,7 +182,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-8 sm:py-10">
+    <footer class="bg-gray-900 text-white py-8 sm:py-10 shadow-inner-top"> <!-- Sombra sutil en la parte superior del footer -->
         <div class="container mx-auto px-4 text-center">
             <p class="text-sm sm:text-lg">&copy; 2025 Ensintonía. Todos los derechos reservados.</p>
             <p class="text-xs sm:text-sm mt-2 text-gray-400">Diseñado con <span class="text-red-500">&hearts;</span> para tu hogar.</p>
