@@ -75,7 +75,7 @@
             <!-- Menú de Navegación para escritorio -->
             <nav id="desktop-nav" class="hidden sm:flex">
                 <ul class="flex space-x-8">
-                    <li><a href="#productos" class="navbar-link text-xl font-medium text-gray-700 hover:text-blue-600">Productos</a></li>
+                    <li><a href="#productos" class="navbar-link text-xl font-medium text-gray-700 hover:text-blue-600">Categorías</a></li>
                     <li><a href="#contacto" class="navbar-link text-xl font-medium text-gray-700 hover:text-blue-600">Contacto</a></li>
                 </ul>
             </nav>
@@ -84,7 +84,7 @@
         <!-- Menú de Navegación para móvil (oculto por defecto) -->
         <nav id="mobile-nav" class="hidden sm:hidden bg-white py-2 px-4 border-t border-gray-200">
             <ul class="flex flex-col space-y-4">
-                <li><a href="#productos" class="navbar-link text-lg font-medium text-gray-700 hover:text-blue-600 block py-2">Productos</a></li>
+                <li><a href="#productos" class="navbar-link text-lg font-medium text-gray-700 hover:text-blue-600 block py-2">Categorías</a></li>
                 <li><a href="#contacto" class="navbar-link text-lg font-medium text-gray-700 hover:text-blue-600 block py-2">Contacto</a></li>
             </ul>
         </nav>
@@ -104,95 +104,39 @@
         <div class="container mx-auto px-4">
             <h2 class="text-4xl sm:text-5xl font-bold text-center mb-12 sm:mb-16 text-gray-900">Nuestras Categorías</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 sm:gap-10">
-                <!-- Tarjeta de Categoría: Heladeras -->
-                <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer" onclick="goToCategory('Heladeras')">
-                    <img src="https://placehold.co/600x400/a7d9f7/2d3748?text=Heladeras" alt="Heladeras" class="w-full h-48 sm:h-52 object-cover transition duration-300 ease-in-out transform hover:scale-105">
+                <!-- Tarjeta de Categoría: Hogar -->
+                <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer" onclick="goToCategory('Hogar')">
+                    <img src="https://placehold.co/600x400/a7d9f7/2d3748?text=Hogar" alt="Hogar" class="w-full h-48 sm:h-52 object-cover transition duration-300 ease-in-out transform hover:scale-105">
                     <div class="p-6 sm:p-7">
-                        <h3 class="text-2xl sm:text-3xl font-semibold mb-2 sm:mb-3 text-gray-900">Heladeras</h3>
-                        <p class="text-base sm:text-lg text-gray-700 mb-4 sm:mb-5">Mantén tus alimentos frescos y organizados con nuestras heladeras de última generación.</p>
+                        <h3 class="text-2xl sm:text-3xl font-semibold mb-2 sm:mb-3 text-gray-900">Hogar</h3>
+                        <p class="text-base sm:text-lg text-gray-700 mb-4 sm:mb-5">Todo lo que necesitas para equipar tu casa: heladeras, cocinas, lavarropas, ollas y microondas.</p>
                         <button class="btn-primary text-white font-bold py-2 px-4 sm:py-3 sm:px-6 rounded-lg w-full">Ver Categoría</button>
                     </div>
                 </div>
 
-                <!-- Tarjeta de Categoría: Cocinas -->
-                <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer" onclick="goToCategory('Cocinas')">
-                    <img src="https://placehold.co/600x400/f7d9a7/2d3748?text=Cocinas" alt="Cocinas" class="w-full h-48 sm:h-52 object-cover transition duration-300 ease-in-out transform hover:scale-105">
+                <!-- Tarjeta de Categoría: Audio -->
+                <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer" onclick="goToCategory('Audio')">
+                    <img src="https://placehold.co/600x400/f7d9a7/2d3748?text=Audio" alt="Audio" class="w-full h-48 sm:h-52 object-cover transition duration-300 ease-in-out transform hover:scale-105">
                     <div class="p-6 sm:p-7">
-                        <h3 class="text-2xl sm:text-3xl font-semibold mb-2 sm:mb-3 text-gray-900">Cocinas</h3>
-                        <p class="text-base sm:text-lg text-gray-700 mb-4 sm:mb-5">Prepara tus comidas favoritas con nuestras cocinas modernas y eficientes.</p>
+                        <h3 class="text-2xl sm:text-3xl font-semibold mb-2 sm:mb-3 text-gray-900">Audio</h3>
+                        <p class="text-base sm:text-lg text-gray-700 mb-4 sm:mb-5">Sumérgete en el mejor sonido con nuestra selección de parlantes de alta fidelidad.</p>
                         <button class="btn-primary text-white font-bold py-2 px-4 sm:py-3 sm:px-6 rounded-lg w-full">Ver Categoría</button>
                     </div>
                 </div>
 
-                <!-- Tarjeta de Categoría: Lavarropas -->
-                <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer" onclick="goToCategory('Lavarropas')">
-                    <img src="https://placehold.co/600x400/d9a7f7/2d3748?text=Lavarropas" alt="Lavarropas" class="w-full h-48 sm:h-52 object-cover transition duration-300 ease-in-out transform hover:scale-105">
+                <!-- Tarjeta de Categoría: Electrónica -->
+                <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer" onclick="goToCategory('Electronica')">
+                    <img src="https://placehold.co/600x400/d9a7f7/2d3748?text=Electronica" alt="Electrónica" class="w-full h-48 sm:h-52 object-cover transition duration-300 ease-in-out transform hover:scale-105">
                     <div class="p-6 sm:p-7">
-                        <h3 class="text-2xl sm:text-3xl font-semibold mb-2 sm:mb-3 text-gray-900">Lavarropas</h3>
-                        <p class="text-base sm:text-lg text-gray-700 mb-4 sm:mb-5">Simplifica tu vida con nuestros lavarropas de alta capacidad y tecnología avanzada.</p>
+                        <h3 class="text-2xl sm:text-3xl font-semibold mb-2 sm:mb-3 text-gray-900">Electrónica</h3>
+                        <p class="text-base sm:text-lg text-gray-700 mb-4 sm:mb-5">Descubre lo último en tecnología: televisores y cafeteras inteligentes para tu hogar.</p>
                         <button class="btn-primary text-white font-bold py-2 px-4 sm:py-3 sm:px-6 rounded-lg w-full">Ver Categoría</button>
                     </div>
                 </div>
 
-                <!-- Tarjeta de Categoría: Televisores -->
-                <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer" onclick="goToCategory('Televisores')">
-                    <img src="https://placehold.co/600x400/a7f7d9/2d3748?text=Televisores" alt="Televisores" class="w-full h-48 sm:h-52 object-cover transition duration-300 ease-in-out transform hover:scale-105">
-                    <div class="p-6 sm:p-7">
-                        <h3 class="text-2xl sm:text-3xl font-semibold mb-2 sm:mb-3 text-gray-900">Televisores</h3>
-                        <p class="text-base sm:text-lg text-gray-700 mb-4 sm:mb-5">Disfruta de tus programas y películas con la mejor calidad de imagen y sonido.</p>
-                        <button class="btn-primary text-white font-bold py-2 px-4 sm:py-3 sm:px-6 rounded-lg w-full">Ver Categoría</button>
-                    </div>
-                </div>
+                <!-- Eliminadas las tarjetas de productos individuales (Heladeras, Cocinas, Lavarropas, etc.) -->
+                <!-- Se mantienen 3 tarjetas para las 3 categorías solicitadas -->
 
-                <!-- Tarjeta de Categoría: Parlantes -->
-                <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer" onclick="goToCategory('Parlantes')">
-                    <img src="https://placehold.co/600x400/f7a7d9/2d3748?text=Parlantes" alt="Parlantes" class="w-full h-48 sm:h-52 object-cover transition duration-300 ease-in-out transform hover:scale-105">
-                    <div class="p-6 sm:p-7">
-                        <h3 class="text-2xl sm:text-3xl font-semibold mb-2 sm:mb-3 text-gray-900">Parlantes</h3>
-                        <p class="text-base sm:text-lg text-gray-700 mb-4 sm:mb-5">Sumérgete en el sonido con nuestros potentes parlantes para una experiencia inmersiva.</p>
-                        <button class="btn-primary text-white font-bold py-2 px-4 sm:py-3 sm:px-6 rounded-lg w-full">Ver Categoría</button>
-                    </div>
-                </div>
-
-                <!-- Tarjeta de Categoría: Bicicletas -->
-                <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer" onclick="goToCategory('Bicicletas')">
-                    <img src="https://placehold.co/600x400/d9f7a7/2d3748?text=Bicicletas" alt="Bicicletas" class="w-full h-48 sm:h-52 object-cover transition duration-300 ease-in-out transform hover:scale-105">
-                    <div class="p-6 sm:p-7">
-                        <h3 class="text-2xl sm:text-3xl font-semibold mb-2 sm:mb-3 text-gray-900">Bicicletas</h3>
-                        <p class="text-base sm:text-lg text-gray-700 mb-4 sm:mb-5">Explora nuevos caminos y mantente activo con nuestras bicicletas de alta calidad.</p>
-                        <button class="btn-primary text-white font-bold py-2 px-4 sm:py-3 sm:px-6 rounded-lg w-full">Ver Categoría</button>
-                    </div>
-                </div>
-
-                <!-- Tarjeta de Categoría: Ollas -->
-                <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer" onclick="goToCategory('Ollas')">
-                    <img src="https://placehold.co/600x400/a7f7f7/2d3748?text=Ollas" alt="Ollas" class="w-full h-48 sm:h-52 object-cover transition duration-300 ease-in-out transform hover:scale-105">
-                    <div class="p-6 sm:p-7">
-                        <h3 class="text-2xl sm:text-3xl font-semibold mb-2 sm:mb-3 text-gray-900">Ollas</h3>
-                        <p class="text-base sm:text-lg text-gray-700 mb-4 sm:mb-5">Cocina con estilo y eficiencia con nuestra variedad de ollas duraderas y funcionales.</p>
-                        <button class="btn-primary text-white font-bold py-2 px-4 sm:py-3 sm:px-6 rounded-lg w-full">Ver Categoría</button>
-                    </div>
-                </div>
-
-                <!-- Tarjeta de Categoría: Cafeteras -->
-                <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer" onclick="goToCategory('Cafeteras')">
-                    <img src="https://placehold.co/600x400/f7f7a7/2d3748?text=Cafeteras" alt="Cafeteras" class="w-full h-48 sm:h-52 object-cover transition duration-300 ease-in-out transform hover:scale-105">
-                    <div class="p-6 sm:p-7">
-                        <h3 class="text-2xl sm:text-3xl font-semibold mb-2 sm:mb-3 text-gray-900">Cafeteras</h3>
-                        <p class="text-base sm:text-lg text-gray-700 mb-4 sm:mb-5">Disfruta del mejor café en casa con nuestras cafeteras, perfectas para cada gusto.</p>
-                        <button class="btn-primary text-white font-bold py-2 px-4 sm:py-3 sm:px-6 rounded-lg w-full">Ver Categoría</button>
-                    </div>
-                </div>
-
-                <!-- Tarjeta de Categoría: Microondas -->
-                <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer" onclick="goToCategory('Microondas')">
-                    <img src="https://placehold.co/600x400/a7a7f7/2d3748?text=Microondas" alt="Microondas" class="w-full h-48 sm:h-52 object-cover transition duration-300 ease-in-out transform hover:scale-105">
-                    <div class="p-6 sm:p-7">
-                        <h3 class="text-2xl sm:text-3xl font-semibold mb-2 sm:mb-3 text-gray-900">Microondas</h3>
-                        <p class="text-base sm:text-lg text-gray-700 mb-4 sm:mb-5">Calienta y cocina tus alimentos de forma rápida y sencilla con nuestros microondas.</p>
-                        <button class="btn-primary text-white font-bold py-2 px-4 sm:py-3 sm:px-6 rounded-lg w-full">Ver Categoría</button>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -287,4 +231,3 @@
     </script>
 </body>
 </html>
-
